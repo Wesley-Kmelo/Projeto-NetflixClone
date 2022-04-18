@@ -1,0 +1,108 @@
+/* criação de váriaveis . Nesse caso é uma paleta de cores . No caso de precisar
+trocar a cor, só muda na variável e não precisa buscar em todo código*/
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+
+
+/* configurações de reset para alinhar tdo elementos independente 
+do navegador. Chamado de reset CSS*/
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 0px 2px;
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+/*configurações do cabeçalho header*/
+header .container{ /*configurar todos elementos que estão dentro do cobox chamado container*/
+    display: flex;
+    align-items: center; /*alinha itens verticalmente*/
+    justify-content: space-between; /*distribui espaços entre elementos igualmente*/
+    margin-right: 10px;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 10px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 10px;
+}
+header a:hover{
+    color: rgb(226, 209, 209);
+}
+
+.container{
+    margin-left: 10px;
+}
+
+/*configurações filmePrincipal*/
+.filmePrincipal{
+    height: 400px;  /*configura tamanho do box da imagem de fundo*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/flash.jpg');
+    background-size: cover; /*configura a imagem pra ser do tamanho do box do fundo*/
+    font-size: 16px;
+
+    /*configurações do box container*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filmePrincipal .sinopseFilme{
+    margin-bottom: 65px;
+}
+.filmePrincipal .tituloFilme{
+    font-family: Georgia, Times;
+    font-size: 60px;
+}
+.filmePrincipal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 15px;
+    /*layout dos botões*/
+    padding: 15px 30px;
+    margin-right: 15px;
+    /*animação do ponteiro do mouse em cima do botão*/
+    cursor: pointer;
+    transition: .5s ease all;
+}
+/*animação ao passar o mouse no botões*/
+.filmePrincipal .botao:hover{
+    background-color:rgb(236, 229, 229) ;
+    color: black;
+}
+.filmePrincipal .botao i{
+    margin-right: 5px;
+}
+.filmePrincipal .container{
+    width: 60%;
+}
+.carrossel{
+    margin-top: 10px;
+  
+}
+.boxcarrosel{
+    height: 100%;
+    width: 100%;
+    display: block; 
+       
+}
+.carrossel .item:hover{
+    cursor: pointer;
+}

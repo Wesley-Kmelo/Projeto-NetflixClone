@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NetflixClone</title>
+        
+        <script src="https://kit.fontawesome.com/1dca64863e.js" crossorigin="anonymous"></script>
+       
+        <link rel="stylesheet" href="style/main.css">
+
+        <!--responsividade do site(principalmente em telas bem pequenas tipo smartphone)-->
+        <link rel="stylesheet" href="style/responsive.css">
+        
+        <!--css do carrossel de imagens-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    </head>
+
+    <body>
+        <header> <!--é um cabeçalho onde vai um container e dentro desse container vão dois elementos. Um h2 e um nav-->
+            <div class="container">
+                <h2 class="logo">NETFLIX</h2>
+                <nav> 
+                    <a href="#">Inicio</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="filmePrincipal">
+                <div class="container">
+                    <h3 class="tituloFilme">The Flash</h3>
+                    <p class="sinopseFilme">Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                            Assistir Agora
+                        </button>                
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Mais informações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="carrossel">
+            <div class="owl-carousel owl-theme">
+                <!--para tornar a imagem clicavel , a estrutura segue abaixo-->          
+                <div class="item">          
+                    <a href="#">
+                        <img class="boxcarrossel" src="img/mini1.jpg" >
+                    </a>
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini2.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini3.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini4.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini5.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini6.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini7.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini8.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrossel" src="img/mini9.jpg">
+                </div>
+                <div class="item">
+                    <img class="boxcarrosel" src="img/mini10.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!--scripts Jquery que executam o carrosel. Boas práticas pedem que os scrpts fiquem sempre no final do código do body-->
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+
+        <!--o script que chama os scripts acima deve ser chamado por último. Não entendi ainda porque, mas....-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

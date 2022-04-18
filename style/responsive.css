@@ -1,0 +1,18 @@
+/*a finalidade desse estilo é formatar a tela quandoestiver em proporções menoresAssim vai funcionar como se fosse um se ou uma condição*/
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filmePrincipal .botao{
+        margin-bottom: 10px;
+    }    
+}
+
+@media screen and (min-width:1000px) {
+    .filmePrincipal .sinopseFilme{
+        width: 50%;
+    }
+    
+}
